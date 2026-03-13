@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BestDeals AI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>BestDeals AI 🔎</h1>
+      <p class="subtitle">
+        Upload a product photo to get AI-estimated price comparisons across shopping websites.
+      </p>
+
+      <form id="uploadForm" class="card">
+        <label for="productImage">Product image</label>
+        <input id="productImage" name="productImage" type="file" accept="image/*" required />
+        <button type="submit">Find Best Prices</button>
+      </form>
+
+      <section id="status" class="status"></section>
+      <section id="result" class="result"></section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
